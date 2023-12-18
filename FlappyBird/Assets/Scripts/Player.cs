@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     public Sprite[] sprites;
     private int spriteIndex ;
     
+    
 
      /// <summary>
     /// Awake is called when the script instance is being loaded.
@@ -24,7 +25,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         InvokeRepeating(nameof(AnimateSprite),0.15f,0.15f);
-        Cursor.visible=false;
+        
     }
  /// <summary>
     /// This function is called when the object becomes enabled and active.
